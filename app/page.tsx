@@ -1,6 +1,7 @@
 import Search from "./_components/ui/search-input";
 import Header from "./_components/ui/header";
 import CategoryList from "./_components/category-list";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -12,6 +13,19 @@ const Home = () => {
 
       <div className="px-5 pt-6">
       <CategoryList/>
+      </div>
+
+      <div className="pt-6 px-5">
+      <Image 
+        src="/banner.png" 
+        alt="Até 30% desconto em pizzas" 
+        height={0} 
+        width={0} 
+        className="h-auto w-full object-contain" 
+        sizes="100vw"
+        quality={100}
+
+      />
       </div>
     </>
     );
